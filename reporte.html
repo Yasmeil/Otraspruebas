@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportes y Análisis</title>
+    <link rel="stylesheet" href="reporte.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard">
+        
+        <div class="sidebar">
+            <img src="logo.JPG" alt="logo" width="200px" height="200px">
+            <h2>Migración</h2>
+            <ul>
+                <li><a href="index.HTML">Monitoreo de Entradas/Salidas</a></li>
+                <li><a href="control_visas_documentos.html">Control de Visas y Documentos</a></li>
+                <li><a href="alerta.html">Alertas en Tiempo Real</a></li>
+                <li><a href="reporte.html" class="active">Reportes y Análisis</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+
+            <h1>Reportes y Análisis</h1>
+
+            <div class="report-container">
+                <h2>Estadísticas de Entradas y Salidas</h2>
+                <canvas id="entryExitChart"></canvas>
+            </div>
+
+            <div class="report-container">
+                <h2>Documentos Rechazados vs Aceptados</h2>
+                <canvas id="docStatusChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="reporte.js"></script>
+</body>
+</html>
